@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Airtable Stats</title>
+  <script src="app.js"></script>
+  <script src="index.js"></script>
+  <style>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #bea42b;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .state {
+      background-color: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      
+  background-color: #1f23d6;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #1b1b1d;
+}
+
+#data-retrieved {
+  color: #1f23d6;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 50px;
+  color: #23d61f;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+  <style>
+    body {
+      font-family: 'Arial Narrow';
+      background-color: #d0d6db;
+      margin-top: 60px;
+      padding: 20px;
+    }
+  </style>
+
+  <h1>Airtable Stats</h1>
+
+  <button onclick="handleClick()">Get Data</button>
+
+  <div class="state">
+    <h2>Data Pulled from Airtable</h2>
+    <p id='data-retrieved'> </p>
+    <table id="myTable" class="">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Major</th>
+          <th>Sex</th>
+          <th>Classification</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody id="Body"></tbody>
+    </table>
+  </div>
+
+  <div class="state">
+    <h2>Updated Documents</h2>
+    <p id='no-of-records-updated'> </p>
+  </div>
+
+</body>
+</html>
