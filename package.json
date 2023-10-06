@@ -1,0 +1,19 @@
+{
+  "name": "status_page",
+  "version": "1.0.0",
+  "description": "Status page to show the number of data points pulled and pushed via the Airtable API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Wisdom Ariagbofo",
+  "license": "ISC",
+  "dependencies": {
+    "airtable": "^0.12.1",
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongod": "^2.0.0",
+    "mongodb": "^5.7.0"
+  }
+}
